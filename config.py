@@ -9,7 +9,7 @@ log_level = logging.INFO
 log_format = '%(asctime)s %(levelname)s %(name)s: %(message)s'
 
 ### Server
-listening_ip = "0.0.0.0"
+listening_ip = "127.0.0.1"
 listening_port = 8081
 
 ### Cost Estimate
@@ -26,23 +26,23 @@ currency_type   = "EUR"   # Currency Symbol to show when calculating cost to run
 #   can use whichever GPIO you prefer/have available.
 
 ### Outputs
-gpio_heat = 11  # Switches zero-cross solid-state-relay
-gpio_cool = 10  # Regulates PWM for 12V DC Blower
-gpio_air  = 9   # Switches 0-phase det. solid-state-relay
+gpio_heat = 13  # Switches zero-cross solid-state-relay
+gpio_cool = 19  # Regulates PWM for 12V DC Blower
+gpio_air  = 26  # Switches 0-phase det. solid-state-relay
 
 heater_invert = 0 # switches the polarity of the heater control
 
 ### Inputs
-gpio_door = 18
+gpio_door = 6
 
 ### Thermocouple Adapter selection (MAX31855 or MAX6675)
-max31855 = 1
-max6675 = 0
+max31855 = 0
+max6675 = 1
 
 ### Thermocouple I2C Connection
-gpio_sensor_cs = 27
-gpio_sensor_clock = 22
-gpio_sensor_data = 17
+gpio_sensor_cs = 16
+gpio_sensor_clock = 20
+gpio_sensor_data = 21
 
 
 ########################################################################
